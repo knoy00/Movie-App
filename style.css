@@ -1,0 +1,185 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+    color: white;
+}
+
+.container{
+    background-image:linear-gradient(to right, rgba(0, 0, 0, 0.999), rgba(1, 2, 1, 0.45)), url(login.jpg);
+    position: absolute;
+    width: 100%;
+    height: 100vh; 
+    background-position: center;
+    background-size: cover;
+}
+
+.logo img{
+    background-color: white;
+    color: white;
+    width: 150px;
+    padding: 15px;
+    border-radius: 20px;
+    margin-top: 20px;
+    margin-left: 20px;
+    transition: all .42s ease-in-out;
+}
+
+.welcome-page{
+    padding: 50px 80px;
+}
+
+.welcome-page h1{
+    color: white;
+    font-size: 50px;
+}
+
+.welcome-page h4{
+    font-size: 30px;
+}
+
+.welcome-page p{
+    font-size: 20px;
+}
+
+input{
+    height: 50px;
+    margin-top: 10px;
+}
+
+.email-input{
+    width: 300px;
+    border-radius: 5px;
+    border: 1px solid white;
+    color: grey;
+    text-align: center;
+    font-size: 20px;
+    background-color: rgba(0, 0, 0, 0.574);
+    transition: all .42s ease-in-out;
+}
+
+.input-btn{
+    width: 150px;
+    background-color: red;
+    outline: none;
+    border: none;
+    border-radius: 5px;
+    font-size: 15px;
+    font-weight: 600;
+    margin-left: 5px;
+    cursor: pointer;
+    transition: all .42s ease-in-out;
+}
+
+.input-btn:hover{
+    color: red;
+    background-color: white;
+}
+
+#alert{
+    color: red;
+    margin-top: 10px;
+    font-weight: 500;
+    transition: .4s;
+}
+
+.signin-page{
+    background-image:linear-gradient(to right, rgba(0, 0, 0, 0.296), rgba(1, 2, 1, 0.45)), url(login.jpg);
+    position: absolute;
+    width: 100%;
+    height: 100vh; 
+    background-position: center;
+    background-size: cover;
+}
+
+.form-box{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background: #111010ec;
+    border-radius: 6px;
+    width: 35%;
+    height: 500px;
+    padding: 50px 60px 70px;
+    text-align: center;
+}
+
+.form-box h2{
+    font-size: 40px;
+    font-weight: 500;
+}
+
+
+.form-input input{
+    color: rgb(251, 251, 251);
+    background-color: rgba(115, 115, 115, 0.66);
+    width: 90%;
+    text-align: center;
+    border-radius: 5px;
+    border: none;
+    font-size: 15px;
+    margin-top: 20px;
+}
+
+.form-box p{
+    font-size: 18px;
+    margin-top: 20px;
+    color: rgb(162, 160, 160);
+}
+
+.form-button button{
+    width: 170px;
+    background-color: red;
+    outline: none;
+    border: none;
+    border-radius: 5px;
+    font-size: 18px;
+    font-weight: 300;
+    font-weight: 600;
+    margin-left: 5px;
+    margin-top: 20px;
+    height: 50px;
+    cursor: pointer;
+    transition: all .42s ease-in-out;
+}
+
+.form-button button:hover{
+    color: red;
+    background-color: white;
+}
+
+.signup-section{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 15px;
+}
+
+.signup-section a{
+    margin-top: 19px;
+}
+
+@media(max-width:750px){
+    .welcome-page h1{
+        color: white;
+        font-size: 25px;
+    }
+    .welcome-page h4{
+        color: white;
+        font-size: 20px;
+    }
+    .welcome-page p{
+        color: white;
+        font-size: 15px;
+    }
+
+    .email-input{
+        width: 250px;
+    }
+
+    #alert{
+        font-size: 15px;
+    }
+}
