@@ -162,6 +162,14 @@ input{
 }
 
 @media(max-width:750px){
+    .container{
+    background-image:linear-gradient(to right, rgba(0, 0, 0, 0.999), rgba(1, 2, 1, 0.45)), url(login.jpg);
+    position: absolute;
+    width: 100%;
+    height: 100dvh; 
+    background-position: center;
+    background-size: cover;
+}
     .welcome-page h1{
         color: white;
         font-size: 25px;
