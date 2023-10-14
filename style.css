@@ -166,6 +166,14 @@ input{
         color: white;
         font-size: 25px;
     }
+    .container{
+        background-image:linear-gradient(to right, rgba(0, 0, 0, 0.999), rgba(1, 2, 1, 0.45)), url(login.jpg);
+        position: absolute;
+        width: 100%;
+        height: 100dvh; 
+        background-position: center;
+        background-size: cover;
+    }
     .welcome-page h4{
         color: white;
         font-size: 20px;
