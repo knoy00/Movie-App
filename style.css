@@ -170,21 +170,18 @@ input{
     background-position: center;
     background-size: cover;
 }
+    .welcome-page{
+        padding: 80px 40px;
+    }
     .welcome-page h1{
         color: white;
         font-size: 25px;
     }
-    .container{
-        background-image:linear-gradient(to right, rgba(0, 0, 0, 0.999), rgba(1, 2, 1, 0.45)), url(login.jpg);
-        position: absolute;
-        width: 100%;
-        height: 100dvh; 
-        background-position: center;
-        background-size: cover;
-    }
+   
     .welcome-page h4{
-        color: white;
+        color: rgba(231, 189, 5, 0.822);
         font-size: 20px;
+        margin-top: 15px;
     }
     .welcome-page p{
         color: white;
@@ -192,10 +189,63 @@ input{
     }
 
     .email-input{
-        width: 250px;
+        width: 280px;
     }
 
     #alert{
         font-size: 15px;
+    }
+
+    .logo img{
+        width: 90px;
+        border-radius: 15px;
+    }
+
+    .email-input{
+        font-size: 15px;
+    }
+
+    .input-btn{
+        width: 200px;
+        border-radius: 2px;
+    }
+
+    .form-box{
+        position: absolute;
+        top: 45%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        background: #111010ec;
+        border-radius: 6px;
+        width: 90%;
+        height: 500px;
+        padding: 0px;
+        text-align: center;
+        margin-top: 30px;
+    }
+
+    .form-box h2{
+        font-size: 30px;
+        font-weight: 500;
+    }
+
+    .form-input input{
+        color: rgb(251, 251, 251);
+        background-color: rgba(115, 115, 115, 0.66);
+        width: 90%;
+        text-align: center;
+        border-radius: 5px;
+        border: none;
+        font-size: 10px;
+        margin-top: 20px;
+    }
+
+    .form-box p{
+        font-size: 15px;
+    }
+
+    .form-button button{
+        width: 150px;
+        border-radius: 1px;
     }
 }
