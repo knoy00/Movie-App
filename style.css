@@ -84,7 +84,7 @@ input{
     transition: .4s;
 }
 
-.signin-page{
+.signup-page{
     background-image:linear-gradient(to right, rgba(0, 0, 0, 0.296), rgba(1, 2, 1, 0.45)), url(login.jpg);
     position: absolute;
     width: 100%;
@@ -111,6 +111,15 @@ input{
     font-weight: 500;
 }
 
+.form-box span{
+    transition: 0.5s;
+
+}
+#nameField{
+    max-height: 250px;
+    transition: max-height 0.9s;
+    overflow: hidden;
+}
 
 .form-input input{
     color: rgb(251, 251, 251);
@@ -121,6 +130,7 @@ input{
     border: none;
     font-size: 15px;
     margin-top: 20px;
+    
 }
 
 .form-box p{
@@ -150,14 +160,14 @@ input{
     background-color: white;
 }
 
-.signup-section{
+.signin-section{
     display: flex;
     justify-content: center;
     align-items: center;
     gap: 15px;
 }
 
-.signup-section a{
+.signin-section a{
     margin-top: 19px;
 }
 
@@ -210,7 +220,7 @@ input{
         border-radius: 2px;
     }
 
-    .signin-page{
+    .signup-page{
         background-image:linear-gradient(to right, rgba(0, 0, 0, 0.296), rgba(1, 2, 1, 0.45)), url(login.jpg);
         position: absolute;
         width: 100%;
