@@ -33,6 +33,7 @@ signIn.onclick = function() {
         noAccount.textContent = "Don't have an account?"
         signIn.textContent = "Sign up"
         userName.placeholder = "Email  or Username"
+        nameField.placeholder = ""
     } else {
         nameField.style.maxHeight = "250px";
         title.textContent = "Sign Up"
@@ -41,6 +42,7 @@ signIn.onclick = function() {
         forgotPassword.textContent = ""
         noAccount.textContent = "Have an account?"
         signIn.textContent = "Sign in"
+        
     }
 
     isSignInState = !isSignInState
