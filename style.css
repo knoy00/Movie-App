@@ -210,6 +210,15 @@ input{
         border-radius: 2px;
     }
 
+    .signin-page{
+        background-image:linear-gradient(to right, rgba(0, 0, 0, 0.296), rgba(1, 2, 1, 0.45)), url(login.jpg);
+        position: absolute;
+        width: 100%;
+        height: 100dvh; 
+        background-position: center;
+        background-size: cover;
+    }
+
     .form-box{
         position: absolute;
         top: 45%;
@@ -217,7 +226,7 @@ input{
         transform: translate(-50%, -50%);
         background: #111010ec;
         border-radius: 6px;
-        width: 90%;
+        width: 100%;
         height: 500px;
         padding: 0px;
         text-align: center;
@@ -227,6 +236,7 @@ input{
     .form-box h2{
         font-size: 30px;
         font-weight: 500;
+        padding-top: 30px ;
     }
 
     .form-input input{
@@ -247,5 +257,7 @@ input{
     .form-button button{
         width: 150px;
         border-radius: 1px;
+        font-weight: 500;
+        margin-bottom: 20px;
     }
 }
