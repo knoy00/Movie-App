@@ -1,6 +1,6 @@
 const inputBtn = document.getElementById("input-btn");
 const startPage = document.getElementById("get-started")
-const signInPage = document.getElementById("signin-page")
+const signUpPage = document.getElementById("signup-page")
 const alert = document.getElementById("alert")
 const confirmPassword = document.getElementById("confirm-password")
 const signUp = document.getElementById("signup-btn")
@@ -18,7 +18,7 @@ inputBtn.addEventListener("click", function(){
 
     if(email === validEmail){
         startPage.style.display = "none";
-        signInPage.style.display = "block";
+        signUpPage.style.display = "block";
     } else{
         alert.textContent = "Not a valid Email"
     }

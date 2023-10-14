@@ -16,7 +16,7 @@
 }
 
 .logo img{
-    background-color: white;
+    background-color: rgba(224, 218, 218, 0.783);
     color: white;
     width: 150px;
     padding: 15px;
@@ -115,6 +115,7 @@ input{
     transition: 0.5s;
 
 }
+
 #nameField{
     max-height: 250px;
     transition: max-height 0.9s;
@@ -269,5 +270,11 @@ input{
         border-radius: 1px;
         font-weight: 500;
         margin-bottom: 20px;
+    }
+
+    #nameField{
+        max-height: 300px;
+        transition: max-height 0.9s;
+        overflow: hidden;
     }
 }
