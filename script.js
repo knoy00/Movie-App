@@ -42,7 +42,7 @@ signIn.onclick = function() {
         forgotPassword.textContent = ""
         noAccount.textContent = "Have an account?"
         signIn.textContent = "Sign in"
-        
+        nameField.placeholder = "Confirm Password"
     }
 
     isSignInState = !isSignInState
