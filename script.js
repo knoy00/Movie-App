@@ -12,6 +12,11 @@ const noAccount = document.getElementById("account")
 const userName = document.getElementById("username")
 const home = document.getElementById("home")
 const hover = document.getElementById("hover")
+const image = document.getElementById("image")
+const movieInfo = document.getElementById("movie-info")
+
+
+
 let isSignInState = true;
 const validEmail = "host@dev.com"
 
@@ -52,10 +57,15 @@ signIn.onclick = function() {
     isSignInState = !isSignInState
 }
 
-home.addEventListener('mouseenter', function() {
-    hover.style.display = 'block';
-  });
-  
-  home.addEventListener('mouseleave', function() {
-    hover.style.display = 'none';
-  });
+ const imageContainer = document.querySelector('.movies')
+ const video = document.querySelector('.video')
+
+//  imageContainer.addEventListener('mouseenter', () => {   
+//     video.play()
+//     video.removeAttribute('muted')
+//  })
+
+//  imageContainer.addEventListener('mouseleave', () => {
+//    video.pause()
+//    video.muted = true
+//  })
