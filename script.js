@@ -14,10 +14,19 @@ const home = document.getElementById("home")
 const hover = document.getElementById("hover")
 const image = document.getElementById("image")
 const movieInfo = document.getElementById("movie-info")
+const menuBar = document.getElementById("menu-bar")
+const container = document.getElementById("container")
+const net = document.getElementById("net")
+const header = document.querySelector("header")
+const navBar = document.querySelector("homePage")
+const signUpBtn = document.getElementById("signup-btn")
+const homePage = document.getElementById("homePage")
+const secondPage = document.getElementById("second-page")
+
+// const navBarOffset = navBar.offsetTop;
 
 
 
-let isSignInState = true;
 const validEmail = "host@dev.com"
 
 inputBtn.addEventListener("click", function(){
@@ -32,6 +41,8 @@ inputBtn.addEventListener("click", function(){
         alert.textContent = "Not a valid Email address"
     }
 })
+
+let isSignInState = true;
 
 signIn.onclick = function() {
     if(isSignInState){
@@ -57,15 +68,18 @@ signIn.onclick = function() {
     isSignInState = !isSignInState
 }
 
- const imageContainer = document.querySelector('.movies')
- const video = document.querySelector('.video')
+menuBar.addEventListener("click", () => {
+    hover.style.display = "block"
+})
 
-//  imageContainer.addEventListener('mouseenter', () => {   
-//     video.play()
-//     video.removeAttribute('muted')
-//  })
+hover.addEventListener("mouseleave", () => {
+    hover.style.display = "none"
+})
 
-//  imageContainer.addEventListener('mouseleave', () => {
-//    video.pause()
-//    video.muted = true
-//  })
+
+signUpBtn.addEventListener("click", () => {
+    startPage.style.display = "none";
+   signUpPage.style.display = "none";
+    homePage.style.display = "block"
+    secondPage.style.display = "block"
+ })
