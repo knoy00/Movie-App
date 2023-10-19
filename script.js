@@ -11,7 +11,6 @@ const title = document.getElementById("title")
 const noAccount = document.getElementById("account")
 const userName = document.getElementById("username")
 const home = document.getElementById("home")
-const hover = document.getElementById("hover")
 const image = document.getElementById("image")
 const movieInfo = document.getElementById("movie-info")
 const menuBar = document.getElementById("menu-bar")
@@ -22,6 +21,8 @@ const navBar = document.querySelector("homePage")
 const signUpBtn = document.getElementById("signup-btn")
 const homePage = document.getElementById("homePage")
 const secondPage = document.getElementById("second-page")
+const thirdPage = document.getElementById("third-page")
+const fourthPage = document.getElementById("fourth-page")
 
 // const navBarOffset = navBar.offsetTop;
 
@@ -68,18 +69,12 @@ signIn.onclick = function() {
     isSignInState = !isSignInState
 }
 
-menuBar.addEventListener("click", () => {
-    hover.style.display = "block"
-})
-
-hover.addEventListener("mouseleave", () => {
-    hover.style.display = "none"
-})
-
 
 signUpBtn.addEventListener("click", () => {
     startPage.style.display = "none";
    signUpPage.style.display = "none";
     homePage.style.display = "block"
     secondPage.style.display = "block"
+    thirdPage.style.display = "block"
+    fourthPage.style.display = "block"
  })

@@ -548,7 +548,23 @@ h3{
     #movies{
         display: flex;
         flex-wrap: wrap;
+        justify-content: flex-start;
+        gap: 20px;
     }
 
-    
+    .moviesTab {
+        width: calc(50% - 10px);
+    }
+
+    .movies img {
+        width: 115%;
+        margin-left: 0;
+    }
+}
+
+@media(max-width:1024px){
+    .home-nav{
+        
+    }
+
 }
