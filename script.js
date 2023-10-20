@@ -23,6 +23,8 @@ const homePage = document.getElementById("homePage")
 const secondPage = document.getElementById("second-page")
 const thirdPage = document.getElementById("third-page")
 const fourthPage = document.getElementById("fourth-page")
+const contact = document.getElementById("contact")
+const endText = document.getElementById("end-text")
 
 // const navBarOffset = navBar.offsetTop;
 
@@ -31,16 +33,8 @@ const fourthPage = document.getElementById("fourth-page")
 const validEmail = "host@dev.com"
 
 inputBtn.addEventListener("click", function(){
-    const email = document.getElementById("email").value;
-
-    if(email === validEmail){
         startPage.style.display = "none";
         signUpPage.style.display = "block";
-    } else if (email.length <= 0) {
-        alert.textContent = "Enter your Email address"
-    } else{
-        alert.textContent = "Not a valid Email address"
-    }
 })
 
 let isSignInState = true;
@@ -77,4 +71,18 @@ signUpBtn.addEventListener("click", () => {
     secondPage.style.display = "block"
     thirdPage.style.display = "block"
     fourthPage.style.display = "block"
+    endText.style.display = "block"
+    contact.style.display = "block"
  })
+
+
+
+ const menu = document.querySelector("#menu-icon")
+ const navmenu = document.querySelector(".navmenu")
+
+menu.onclick = () => {
+  menu.classList.toggle("bx-x");
+   navmenu.classList.toggle("open")
+ }
+
+
